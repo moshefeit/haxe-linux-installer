@@ -26,7 +26,7 @@ if [ $RESP = "y" ]; then
 		echo "    Pemasangan Dependensi"
 		echo "---------------------------------------"
 		
-		sudo yum -y install wget
+		sudo dnf -y install wget
 		
 	elif [ -n "$(command -v pacman)" ]; then
 		
@@ -154,7 +154,7 @@ if [ $RESP = "y" ]; then
 	
 	if [ -n "$(command -v yum)" ]; then
 		
-		sudo yum -y install libgc
+		sudo dnf -y install libgc
 		
 	elif [ -n "$(command -v pacman)" ]; then
 		
